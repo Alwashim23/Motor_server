@@ -14,6 +14,6 @@ app.post('/motor', (req, res) => {
     res.json({ motor: status });
 });
 
-app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+app.listen(3000, () => {
+    console.log("Server running");
 });

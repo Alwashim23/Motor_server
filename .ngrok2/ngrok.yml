@@ -1,0 +1,4 @@
+tunnels:
+  my-tunnel:
+    proto: http
+    addr: 3000   # Change 3000 to your server's port if different

@@ -4,6 +4,11 @@ const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("Motor Server Running");
+});
+
+
 app.get('/test', (req, res) => {
     res.json({ message: "Server is working" });
 });
@@ -14,6 +19,6 @@ app.post('/motor', (req, res) => {
     res.json({ motor: status });
 });
 
-app.listen(3000, () => {
-    console.log("Server running");
+app.listen(port, () => {
+    console.log(`Server running on port ${port}`);
 });
